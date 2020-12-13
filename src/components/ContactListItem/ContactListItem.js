@@ -4,10 +4,9 @@ import PropTypes from "prop-types";
 
 const ContactListItem = ({ name, number, onRemove }) => (
   <li className={styles.ContactListItem}>
-    <p className={styles.ContactListText}>
-      {name}:<br />
-      {number}
-    </p>
+    <div className={styles.ContactListText}>
+      {name}:<div>{number}</div>
+    </div>
 
     <button
       type="button"
